@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+.container{
+  height: 100%;
+    width: 100%;
+    background-color: white;
+}
+.header{
+  height: 20%; /*Here if we want to fix the size of the header then just we have to remove the height % and add just height auto (if we already set the padding as well as margin big then we have also decrease its size)*/
+  width: 100%;
+  background: linear-gradient(to right, #DCECF8, #FFFFFF);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.image1 img{
+  height: 115px;
+  padding-left: 11rem;
+  padding-top: 11px;
+}
+.header h1{
+  color: #2E2A87;
+  padding-top: 1rem;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.image2 img{
+  height: 115px;
+  padding-right: 0.02rem;
+  padding-top: 11px;
+}
+#selector1{
+  background-color: yellow;
+  height: 25px;
+  margin-top: auto;
+  font-weight: 500;
+  border: 2px solid black;
+}
+.header1{
+  height: 10.6%;
+  width: 100%;
+      background-color: #2E2A87;
+  padding-left:  185px;
+  padding-right: 250px;
+  padding-top: 8px;
+}
+.header1 tr {
+  display: flex;
+  flex-direction: row; 
+  justify-content: flex-start;
+  gap: 20px;              
+}
+.header1 td a{
+  color: white;
+  padding: 2px 5px;
+    font-weight: 549;
+  text-decoration: none;
+}
+.header1 td a:hover{
+  color: aquamarine;
+}
+.header1 p {
+  padding-top: 17px;
+    padding-left:  8px;
+    font-weight: bold;
+}
+.header1 p a{
+  color: rgb(209, 103, 65);
+  text-decoration: none;
+}
+.para {
+  width: 100%;
+  overflow: hidden;        
+  position: relative;
+    padding-top: 1.3rem;
+
+}
+.para p{
+  color: green;
+  position: relative;
+  white-space: nowrap;         
+  animation-name: rightmovement;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: reverse;
+  animation-duration: 55s;
+}
+.para p:hover {
+  animation-play-state: paused;  
+}         
+@keyframes rightmovement {
+  from {
+    transform: translateX(-250%);    
+  }
+  to {
+    transform: translateX(100%);  
+  }
+}
+.box{
+  padding-top: 10px;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+.box tr{
+  display: flex;
+  flex-direction: row; 
+  justify-content: flex-start;
+  gap: 20px;   
+}
+.box td a{
+  color: blue;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration-color: rgb(123, 121, 121);
+}
+.image3{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.image3 img{
+  height: 368px;
+  padding-top: 2.7rem;
+  padding-left:  185px;
+  padding-right: 0px;
+}
+.image3-top {
+  display: flex;
+  flex-direction: row;   
+  align-items: flex-start;
+  gap: 30px;             
+}
+.image3-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;  
+}
+.image3 nav a{
+  color: blue;
+}
+.image3 nav {
+  align-self: flex-end;
+  padding-right: 0px; 
+  padding-top: 17px;
+}
+.image3 article{
+  align-self: flex-end;
+  padding-right: 0px;
+}
+.image3 article a{
+  color: green;
+}
+.image3 p{
+  align-self: flex-start;
+  padding-left:  185px;
+}
+.image3 p a{
+  color: black;
+  text-decoration: none;
+}
+.image3 form {
+  height: 525px;
+  width: 270px;
+  background-color: #2E2A87;  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 8px;
+  margin-top: 2.7rem;
+  margin-right: 80px;
+  margin-left: 1px;
+}
+.image3 form button {
+  background-color: yellow;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  width: 80%;        
+  height: 36px;      
+  border-radius: 4px;
+  border: none;
+   margin: 4px auto 10px auto; 
+}
+.image3 form button a{
+    color: black;
+    text-decoration: none;
+}
+.image3 form h3{
+  color: white;
+  font-weight: lighter;
+  text-align: center;
+  font-family: sans-serif;
+}
+#username{
+  height: 36px;
+  width: 90%;
+  margin: 3px auto ; 
+  padding: 5px;
+}
+#password{
+  height: 36px;
+  width: 90%;
+  margin: 1px auto; 
+  padding: 5px;
+}
+#captcha{
+  height: 36px;
+  width: 90%;
+  margin: 3px auto; 
+  padding: 5px;
+}
+.image3 form h2{
+  background-color: rgb(222, 222, 97);
+  text-align: center;
+  height: 40px;
+  width: 40%;
+  margin: 3px auto; 
+  padding: 5px;
+  font-weight: lighter;
+}
+.image3 form p{
+  background-color: yellow;
+  text-align: center;
+  width: 30%;
+  height: 32px;
+  padding: 5px;
+  margin: 16px auto; 
+  border-radius: 4px;
+  font-weight: lighter;
+  font-family: sans-serif;
+}
+.image3 form nav{
+  background-color: yellow;
+  text-align: center;
+  width: 65%;
+  height: 32px;
+  padding: 5px;
+  margin: 5px auto; 
+  border-radius: 4px;
+  font-weight: lighter;
+  font-family: sans-serif;
+}
+.image3 form nav a{
+  color: black;
+  text-decoration: none;
+}
+.image3 form article{
+  background-color: yellow;
+  text-align: center;
+  width: 55%;
+  height: 32px;
+  padding: 5px;
+  margin: 32px auto; 
+  border-radius: 4px;
+  font-weight: lighter;
+  font-family: sans-serif;
+}
+.image3 form article a{
+  color: black;
+  text-decoration: none;
+}
+.image3 form section{
+  background-color: yellow;
+  text-align: center;
+  width: 80%;
+  height: 32px;
+  padding: 5px;
+  margin: 3px auto; 
+  border-radius: 4px;
+  font-weight: lighter;
+  font-family: sans-serif;
+}
+.image3 form section a{
+  color: black;
+  text-decoration: none;
+}
+.image3 form footer{
+  text-align: center;
+  color: white;
+  font-weight: lighter;
+  font-family: sans-serif;
+  font-size: 12px;
+}
+.image4 img{
+  margin-left: 400px;
+  top: 10px;
+  height: 530px;
+}
+.image5 {
+  width: 100%;        
+  height: 100px;
+}
+.image5 img{
+  height: 300px;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+          
+
